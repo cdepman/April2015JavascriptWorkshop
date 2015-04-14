@@ -14,7 +14,7 @@ var medicalRobot = {
 
   heal: function(bodypart){
     if (this.currentLocation() !== this.homeHospital){
-      return "Operation aborted. Return " + this.name + " to " + this.homeHospital + '.';
+      return "Location Error: Operation aborted. Return " + this.name + " to " + this.homeHospital + '.';
     }
     var assessment = this.instructionSet.assess(bodypart);
     console.log('Assessment: \n' + "Patient's " + bodypart + ' is ' + assessment + '.');
@@ -27,7 +27,7 @@ var medicalRobot = {
   },
 
   greet: function(patientName){
-    return "Hello, " + patientName + " I'm " + this.name + ".";
+    return "Hello " + patientName + ", I'm " + this.name + ".";
   }
 };
 
