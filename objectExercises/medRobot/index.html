@@ -6,16 +6,16 @@
 <body style="text-align: center;">
   <h1>Object Exercise 1: Who Heals The Healer?</h2>
   <img src="assets/mediRobot.png" style="height:300px;">
-  <p style="margin: 50px; font-size: 1.3em; padding: 20px; border: 5px dotted white; background-color: black; color: white; line-height: 30px">A lost medical robot was found trudling around near your encampment. People in your community need it desperately. Unfortunaltey, its software seems to have been hacked and it has a lot of errors.</p>
+  <p style="margin: 50px; font-size: 1.3em; padding: 20px; border: 5px dotted white; background-color: black; color: white; line-height: 30px">A lost medical robot was found trudling around near your encampment. People in your community desperately need it. Unfortunately, its software seems to have been hacked and it has a lot of errors. You must fix it!</p>
   <ol style="text-align: left; margin: 0 50px 0 50px; font-size: 1.2em; line-height: 50px;">
     <li>
-      Using the chrome dev console, diagnose the problems and attempt to fix the robot's software in <code>index.js</code>.
+      Using the chrome dev console, diagnose the problems and attempt to fix the robot's software in <code>index.js</code>. There are two main objects: the robot itself, and an external instruction set. Both need fixing!
     </li> 
     <li>
-      Now it runs, and the <code>greet</code> method works (test it out with a name as the argument), but it won't perform its <code>heal</code> method (try to run it). It seems to be locked to a certain location. Unlock it.
+      Now it runs, and the <code>greet</code> method works (test it out with a name (<code>string</code>) as the argument), but it won't perform its <code>heal</code> method (try to run it with a bodypart (<code>string</code>)). It seems to be locked to a certain location. Unlock it.
     </li>
     <li>
-      Even when you've fixed eR42, eR42 still sometimes makes mistakes (try the <code>heal</code> method a few times on different bodyparts) - and says that the condition is 'undefined'. Why is that? Fix it.
+      Even when you've fixed eR42, eR42 still sometimes makes mistakes (try the <code>heal</code> method a few times on different bodyparts) - it says that the condition is <code>undefined</code>. Why is that? Fix it.
     </li>
     <li>
       Currently the eR42 has a 50% chance of healing the patient - that's pretty bad. Adjust it up to 85%. 100% wouldn't be any fun, would it?

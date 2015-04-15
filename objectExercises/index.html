@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Who Heals the Healer?</title>
+</head>
+<body style="text-align: center;">
+  <h1>Object Exercise 1: Who Heals The Healer?</h2>
+  <p style="margin: 50px; font-size: 1.2em; padding: 5px; border: 5px solid black">A Medical Robot was found trudling around near your encampment. People in your community need it desperately. Unfortunaltey, its software seems to have been hacked and it has a lot of errors.</p>
+  <ol style="text-align: left; margin: 0 50px 0 50px; font-size: 1.1em; line-height: 50px;">
+    <li>
+      Using the chrome dev console, diagnose the problems and attempt to fix the robot's software.
+    </li> 
+    <li>
+      Now it runs, and the <code>greet</code> method works (test it out with a name as the argument), but it won't perform its <code>heal</code> method (try to run it). It seems to be locked to a certain location. Unlock it.
+    </li>
+    <li>
+      Even when you've fixed eR42, eR42 still sometimes makes mistakes (try the <code>heal</code> method a few times on different bodyparts) - and says that the condition is 'undefined'. Why is that? Fix it.
+    </li>
+    <li>
+      Currently the eR42 has a 50% chance of healing the patient - that's pretty bad. Adjust it up to 85%. 100% wouldn't be any fun, would it?
+    </li>
+    <li>
+      Wait a second... if something is diagnosed as 'missing', can eR42 heal it? I don't think so. Fix the <code>performHeal</code> method of the <code>medRobotInstructionSetV14</code> object by implementing a conditional that automatically returns false if the condition is 'missing'.
+    </li> 
+  </ol>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
