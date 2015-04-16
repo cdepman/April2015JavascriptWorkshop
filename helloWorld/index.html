@@ -9,31 +9,29 @@
   <p class="intro">Welcome to Javascript! Javascript runs natively in your browser (client) to make webpages interactive. Let's first get familiar with how Javascript is intimately connected with HTML and the browser. Follow the directions below:</p>
   <ol class="instructions">
     <li>
-      We want to see Javascript's output and error messages (for debugging), so let's use the Chrome/Firefox built-in Developer Console. To open the console, you can use a shortcut key combo: On OSX, use <code>cmd+option+j</code>. On Windows/Linux, use <code>ctrl+option+j</code>.
+      We want to see Javascript's output and error messages (for debugging), so let's use the Chrome/Firefox built-in Developer Console. To open the console, you can use a shortcut key combo: On OSX, use <code>cmd+option+j</code>. On Windows/Linux, use <code>ctrl+shift+j</code>. It should pop up on the botton or right hand side of your browser. Next to the <code>&gt</code> symbol, write <code>"hello world"</code> and press <code>enter</code>. Next, write <code>10+5</code> and press <code>enter</code> to perform the calculation.
     </li>     
     <li>
-      Go an find an empty <code>script</code> element at the bottom of this HTML document's body. Inside of the <code>&ltscript&gt</code> tags, write <code>console.log("Hello World!");</code>. Refresh the page and check the console's output.
+      In Sublime, go an find an empty <code>&ltscript&gt</code> element at the bottom of this HTML document's body. Inside of the <code>&ltscript&gt</code> tags, write <code>console.log("Hello World!");</code> and save the document. Refresh the page and check the console's output.
     </li> 
     <li>
-      Add one <code>&ltscript&gt</code> tag at the bottom of this page's body. Connect it to <code>index.js</code> using the element's <code>src</code> property.
+      Add another <code>&ltscript&gt</code> element at the bottom of this page's body. Connect it to <code>index.js</code> using the element's <code>src</code> property.
     </li> 
     <li>
-      Open <code>index.js</code> and write <code>console.log("Hello Again!");</code> on the first line. Save it , refresh index.html, and check the console.
+      Open <code>index.js</code> in Sublime and write <code>console.log("Hello Again!");</code> on the first line. Save it, refresh index.html, and check the console.
     </li>
     <li>
-      We'll be using console.log a lot, so why don't we make a reusable shortcut? That's essentially what a function is, and we'll talk more about those later. In the meantime, let's write the following code on the next line:
-    </li>
-    <code class="codeblock">
-      var print = function(itemToPrint){<br> &nbsp&nbspconsole.log(itemToPrint);<br>};
+      We'll be using <code>console.log()</code> a lot, so why don't we make a reusable shortcut? That's essentially what a function is - and we'll talk more about those later. In the meantime, let's write the following function on the next line (and use proper indentation!):<code class="codeblock"> var print = function(itemToPrint){<br> &nbsp&nbspconsole.log(itemToPrint);<br>};
     </code>
+    </li>
     <li>
-      Let's start using some variables. On the next line in <code>index.js</code>, define a variable <code>myName</code> and assign it to a <code>string</code> of your name. Next, define a variable <code>myLocation</code> and assign it to your current location. Last, use those variables to complete the code here: <code>console.log(____ + 'is learning Javascript in/at' + ______);</code>. Save that code in <code>index.js</code>, refresh index.html, and see what comes out on the console.
+      Let's start using some variables. On the next line of <code>index.js</code>, define a variable <code>myName</code> and assign it to a <code>string</code> of your name. Next, define a variable <code>myLocation</code> and assign it to a <code>string</code> of your current location. Last, use those variables to complete the function invocation here: <code class="codeblock">print(____ + 'is learning Javascript in/at' + ______);</code> Save that code in <code>index.js</code>, refresh index.html, and see what comes out on the console.
     </li>  
     <li>
-      The name and location are squished against 'is' and 'at'! How can we fix that?
+      The name and location are squashed against 'is' and 'at'! How can we fix that?
     </li>    
     <li>
-      Under that, let's start practicing some math. Set a variable <code>matatuWidth</code> equal to 3.2 (meters). Set a variable <code>roadWidth</code> equal to 14 (meters). Set a variable <code>maxMatatus</code> equal to <code>roadWidth</code> divided by <code>matatuWidth</code>. Then use the console.log to print the sentence
+      Under that, let's start practicing some math. Set a variable <code>matatuWidth</code> equal to 3.2 (meters). Set a variable <code>roadWidth</code> equal to 14 (meters). Set a variable <code>maxMatatus</code> equal to <code>roadWidth</code> divided by <code>matatuWidth</code>. Then use our <code>print()</code> function to print out the maximum number of Matatus that can possibly pass each other simultaneously. If you want to get rid of any decimal places, you can put your division inside of the <code>Math.round()</code> method. <code>Math</code> is a global Javascript object that holds many useful methods.
     </li>  
     <li>
       Let's make the circle grow on mouseenter! We'll use the same syntax that you see in sections #1 and #2. But instead of changing the CSS directly, we'll use jQuery's built-in animation method. Into the animate() method, we pass an object that specifies how we want the animation to work. To make the circle 50px taller on mouseenter, we can use 'height' as a key and '+=50px' as the value. We should also expand its width, to keep it a circle, so do the same for the width! 

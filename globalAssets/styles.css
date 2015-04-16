@@ -8,11 +8,13 @@ code {
   letter-spacing: 1px;
   border-radius: 8px;
   border: thin groove;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: .9em;
 }
 
 .codeblock {
   display: table; 
-  line-height: 20px;
+  line-height: 25px;
   background-color: black; 
   color: white;
   text-align: left; 
