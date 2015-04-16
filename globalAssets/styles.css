@@ -1,5 +1,7 @@
 body {
   text-align: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 code {
@@ -12,6 +14,23 @@ code {
   font-size: .9em;
 }
 
+.menu {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  background-color: #66cccc;
+}
+
+.home {
+  background-color: white;
+  border-radius: 5px;
+  top: 25px;
+  padding: 3px;
+  position: absolute;
+  left: 70px;
+}
+
 .codeblock {
   display: table; 
   line-height: 25px;
@@ -22,7 +41,7 @@ code {
 }
 
 .intro {
-  margin: 60px; 
+  margin: 110px 60px 50px; 
   font-size: 1.3em; 
   padding: 20px; 
   border: 5px dotted white; 
