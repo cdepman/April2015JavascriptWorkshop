@@ -36,3 +36,7 @@ code {
   font-size: 1.1em;
   line-height: 50px;
 }
+
+.sub-instructions {
+  list-style: lower-alpha;
+}
