@@ -1,12 +1,9 @@
 var medicalInstructionSetV14 = {
   assess: function(bodypart){
-    var conditions = ['sprained', 'broken', 'cut', 'punctured','missing', 'bruised', 'infected'];
-    return conditions[Math.round(Math.random()* (conditions.length - 1))];
+    var conditions = ['sprained', 'broken', 'cut', 'punctured','missing', 'bruised' 'infected'];
+    return conditions[Math.round(Math.random() * (conditions.length - 1))];
   },  
   performHeal: function(assessment){
-    if (assessment === 'missing'){
-      return false;
-    }
     return Math.random() > 0.5 ? true : false;
   }
 };
@@ -19,7 +16,7 @@ var medicalRobot = {
 
   homeHospital: 'Nairobi General Hospital (-1.296276, 36.804510)',
 
-  instructionSet: medicalInstructionSetV14,
+  1nstructionSet: medicalInstructionSetV14,
 
   currentLocation: function(){
     return '';
@@ -30,7 +27,7 @@ var medicalRobot = {
       return "Location Error: Operation aborted. Return " + this.name + " to " + this.homeHospital + '.';
     }
     var assessment = this.instructionSet.assess(bodypart);
-    console.log('Assessment: \n' + "Patient's " + bodypart + ' is ' + assessment + '.');
+      log('Assessment: \n' + "Patient's " + bodypart + ' is ' + assessment + '.';
     var isHealed = this.instructionSet.performHeal(assessment);
     if (isHealed){
       return "Patient's " + assessment + ' ' + bodypart + ' is healed.';
@@ -40,6 +37,6 @@ var medicalRobot = {
   },
 
   greet: function(patientName){
-    return "Hello " + patientName + ", I'm " + this.name + ".";
+    return "Hello " patientName + ", I'm " + this.name + ".";
   }
 };
